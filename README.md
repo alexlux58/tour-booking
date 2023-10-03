@@ -31,4 +31,4 @@ To get this project up and running on your local machine, follow these steps:
    cd tour-booking
    ```
 
-3. Open index.html
+3. Open 'index.html'
