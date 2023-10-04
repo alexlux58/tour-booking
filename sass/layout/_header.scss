@@ -31,3 +31,54 @@
   height: 25%;
   width: 25%;
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 80vh; // Reduce height
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); // Adjust clip-path
+
+    &__logo-box {
+      top: 30px;
+      left: 30px;
+    }
+
+    &__text-box {
+      top: 35%;
+    }
+  }
+
+  .logo {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 70vh; // Further reduce height
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 65vh,
+      0 100%
+    ); // Further adjust clip-path
+
+    &__logo-box {
+      top: 20px;
+      left: 20px;
+    }
+
+    &__text-box {
+      top: 30%;
+    }
+  }
+
+  .logo {
+    height: 15%;
+    width: 15%;
+  }
+}

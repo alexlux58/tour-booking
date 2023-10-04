@@ -35,3 +35,55 @@
     transform: scale(0.95);
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .composition {
+    &__photo {
+      width: 65%; // Increase width to better fit tablet screens
+
+      &--p1 {
+        top: -1rem;
+      }
+
+      &--p2 {
+        top: 1rem;
+      }
+
+      &--p3 {
+        top: 8rem;
+      }
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .composition {
+    &__photo {
+      width: 75%; // Increase width to better fit mobile screens
+
+      &--p1 {
+        top: 0;
+        left: -2rem;
+      }
+
+      &--p2 {
+        top: 2rem;
+      }
+
+      &--p3 {
+        top: 8rem;
+        left: -1rem;
+      }
+
+      &:hover {
+        transform: scale(1) translateY(0); // Disable hover effect for mobile
+      }
+    }
+
+    &:hover &__photo:not(:hover) {
+      transform: scale(1); // Disable hover effect for mobile
+    }
+  }
+}

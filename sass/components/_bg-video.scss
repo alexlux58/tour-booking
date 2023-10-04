@@ -15,3 +15,24 @@
     object-fit: cover;
   }
 }
+
+// Media query for large screens (1200px and above)
+@media only screen and (min-width: 1200px) {
+  .bg-video {
+    opacity: 0.2;
+  }
+}
+
+// Media query for tablet view (768px to 1199px)
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-video {
+    opacity: 0.15;
+  }
+}
+
+// Media query for mobile view (below 768px)
+@media only screen and (max-width: 767px) {
+  .bg-video {
+    display: none; // Disable video for performance
+  }
+}

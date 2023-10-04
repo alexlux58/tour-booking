@@ -101,3 +101,52 @@
 .read-all-stories-btn {
   margin-top: -8rem;
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: $default-font-size - 2;
+
+    &--green {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .btn-text {
+    font-size: $default-font-size - 2;
+    padding: 2px;
+  }
+
+  .read-all-stories-btn {
+    margin-top: -6rem;
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .btn {
+    margin-top: 20px;
+    padding: 8px 25px;
+    font-size: 0.5rem;
+
+    &--white {
+      height: 20%;
+      font-size: 0.5rem;
+    }
+
+    &--green {
+      margin-top: 0.3rem;
+    }
+  }
+
+  .btn-text {
+    font-size: 0.5rem;
+    padding: 1px;
+  }
+
+  .read-all-stories-btn {
+    margin-top: -4rem;
+  }
+}

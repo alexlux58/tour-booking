@@ -64,3 +64,51 @@
     filter: blur(3px) brightness(80%);
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .story {
+    width: 85%;
+    padding: 4rem;
+    padding-left: 6rem;
+    margin-bottom: 4rem;
+
+    &__shape {
+      width: 12rem;
+      height: 12rem;
+      margin-right: 1.5rem;
+    }
+
+    &__caption {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .story {
+    width: 95%;
+    padding: 3rem;
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+
+    &__shape {
+      width: 10rem;
+      height: 10rem;
+      margin-right: 1rem;
+    }
+
+    &__caption {
+      font-size: 1.2rem;
+    }
+
+    &:hover &__image,
+    &:hover &__caption {
+      // Disable hover effects for mobile
+      transform: none;
+      filter: none;
+      opacity: 0;
+    }
+  }
+}

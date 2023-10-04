@@ -48,3 +48,37 @@
     );
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .row {
+    [class^="col-"] {
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal / 2; // Reduce gutter for tablet
+      }
+    }
+
+    .col-1-of-2,
+    .col-1-of-3,
+    .col-1-of-4 {
+      width: 100%; // Stack columns vertically for tablet
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .row {
+    [class^="col-"] {
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal / 3; // Further reduce gutter for mobile
+      }
+    }
+
+    .col-1-of-2,
+    .col-1-of-3,
+    .col-1-of-4 {
+      width: 100%; // Stack columns vertically for mobile
+    }
+  }
+}

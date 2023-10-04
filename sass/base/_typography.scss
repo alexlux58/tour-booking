@@ -62,3 +62,63 @@
     margin-bottom: 3rem;
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .heading-primary {
+    &--main {
+      font-size: 50px; // Reduce font size
+      letter-spacing: 25px; // Reduce letter spacing
+    }
+
+    &--sub {
+      font-size: 18px; // Reduce font size
+      letter-spacing: 12px; // Reduce letter spacing
+    }
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem; // Reduce font size
+  }
+
+  .heading-tertiary {
+    font-size: $default-font-size - 2; // Slightly reduce font size
+  }
+
+  .paragraph {
+    &:not(:last-child) {
+      margin-bottom: 2rem; // Reduce margin-bottom
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .heading-primary {
+    &--main {
+      font-size: 20px; // Further reduce font size
+      letter-spacing: 10px; // Further reduce letter spacing
+    }
+
+    &--sub {
+      font-size: 16px; // Further reduce font size
+      letter-spacing: 10px; // Further reduce letter spacing
+      letter-spacing: 10px; // Further reduce letter spacing
+    }
+  }
+
+  .heading-secondary {
+    font-size: 2rem; // Further reduce font size
+    padding-top: 8rem;
+  }
+
+  .heading-tertiary {
+    font-size: $default-font-size - 4; // Further reduce font size
+  }
+
+  .paragraph {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem; // Further reduce margin-bottom
+    }
+  }
+}

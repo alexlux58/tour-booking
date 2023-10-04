@@ -61,3 +61,50 @@
     padding: 6rem;
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .section-about,
+  .section-features,
+  .section-tours,
+  .section-stories,
+  .section-book {
+    padding: 10rem 0; // Reduce padding
+  }
+
+  .section-features,
+  .section-book {
+    margin-top: -5rem; // Reduce margin-top
+  }
+
+  .book {
+    height: 40rem; // Reduce height
+    &__form {
+      width: 100%; // Make it full width
+      padding: 3rem; // Reduce padding
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .section-about,
+  .section-features,
+  .section-tours,
+  .section-stories,
+  .section-book {
+    padding: 5rem 0; // Further reduce padding
+  }
+
+  .section-features,
+  .section-book {
+    margin-top: -3rem; // Further reduce margin-top
+  }
+
+  .book {
+    height: 30rem; // Further reduce height
+    &__form {
+      padding: 2rem; // Further reduce padding
+    }
+  }
+}

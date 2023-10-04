@@ -156,3 +156,75 @@
     transform: rotate(-135deg);
   }
 }
+
+// Media query for tablet view (768px and above)
+@media only screen and (max-width: 768px) {
+  .navigation {
+    &__button {
+      height: 6rem;
+      width: 6rem;
+      top: 5rem;
+      right: 5rem;
+    }
+
+    &__background {
+      height: 5rem;
+      width: 5rem;
+      top: 5.5rem;
+      right: 5.5rem;
+    }
+
+    &__list {
+      font-size: 2.5rem;
+    }
+
+    &__link {
+      font-size: 2.5rem;
+    }
+
+    &__icon {
+      width: 2.5rem;
+      &::before,
+      &::after {
+        width: 2.5rem;
+      }
+    }
+  }
+}
+
+// Media query for mobile view (480px and below)
+@media only screen and (max-width: 480px) {
+  .navigation {
+    &__button {
+      height: 5rem;
+      width: 5rem;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    &__background {
+      height: 2rem;
+      width: 4rem;
+      top: 2.5rem;
+      right: 2.5rem;
+    }
+
+    &__list {
+      font-size: 2rem;
+    }
+
+    &__link {
+      font-size: 2rem;
+    }
+
+    &__icon {
+      top: -1rem;
+      left: -0.5rem;
+      width: 2rem;
+      &::before,
+      &::after {
+        width: 2rem;
+      }
+    }
+  }
+}
