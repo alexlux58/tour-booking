@@ -5,7 +5,14 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+
+  // @include respond-phone {
+  //   font-size: 50%;
+  // }
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -18,25 +25,25 @@ body {
 }
 
 // Media query for tablet view (768px and above)
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 9px; // Slightly reduce base font size
-  }
+// @media only screen and (max-width: 768px) {
+//   html {
+//     font-size: 9px; // Slightly reduce base font size
+//   }
 
-  body {
-    padding: 20px; // Reduce padding
-    font-size: 15px; // Slightly reduce font size
-  }
-}
+//   body {
+//     padding: 20px; // Reduce padding
+//     font-size: 15px; // Slightly reduce font size
+//   }
+// }
 
 // Media query for mobile view (480px and below)
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 8px; // Further reduce base font size
-  }
+// @media only screen and (max-width: 480px) {
+//   html {
+//     font-size: 8px; // Further reduce base font size
+//   }
 
-  body {
-    padding: 15px; // Further reduce padding
-    font-size: 14px; // Further reduce font size
-  }
-}
+//   body {
+//     padding: 15px; // Further reduce padding
+//     font-size: 14px; // Further reduce font size
+//   }
+// }

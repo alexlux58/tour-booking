@@ -13,6 +13,20 @@
   transform: translate(-50%, -50%);
 }
 
+// Media Query Manager
+// 0-600px: Phone
+// 600-900px: Tablet Portrait
+// 900-1200px: Tablet Landscape
+// 1200-1800px: Normal Screen
+// 1800px+: Big screen
+
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+// $breakpoint: phone, tab-port, tab-land, big-desktop
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
